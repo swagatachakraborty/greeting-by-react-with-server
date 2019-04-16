@@ -32,7 +32,7 @@ class App extends Component {
         </div>
 
         <div className="output-section">
-          <h2>Output</h2>
+          <h2>Output :</h2>
           <div className="display">{this.state.display}</div>
         </div>
       </main>
