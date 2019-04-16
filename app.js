@@ -7,6 +7,6 @@ app.post('/update', (req, res) => {
   res.send('Hi ' + req.body.name + ' !!!');
 });
 
-app.use(express.static('build'));
+app.use(express.static('react-form-for-name/build'));
 
 module.exports = app;
