@@ -8,6 +8,6 @@ app.post('/update', (req, res) => {
   res.send('Hi ' + req.body.name + ' !!!');
 });
 
-app.use(express.static('build'));
+app.use(express.static('client/build'));
 
 module.exports = app;
