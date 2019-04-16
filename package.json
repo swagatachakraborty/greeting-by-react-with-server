@@ -11,7 +11,7 @@
     "concurrently": "^4.1.0"
   },
   "scripts": {
-    "start": "concurrently \"nodemon server.js --ignore client\" \"cd client && npm start && cd ..\"",
+    "start": "concurrently \"nodemon server.js --ignore client\" \"cd client && npm install && npm start && cd ..\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

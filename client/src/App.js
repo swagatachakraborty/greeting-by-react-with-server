@@ -11,8 +11,8 @@ class App extends Component {
   }
 
   handleClick() {
-    const name = document.getElementsByName('name')[0].value;
-    document.getElementsByName('name')[0].value = '';
+    const name = document.getElementById('name').value;
+    document.getElementById('name').value = '';
     fetch('/update', {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
@@ -27,7 +27,7 @@ class App extends Component {
       <main>
         <div className="input-section">
           <h2>Enter name : </h2>
-          <input name="name" />
+          <input name="name" id="name" />
           <button onClick={this.handleClick}> Submit</button>
         </div>
 
