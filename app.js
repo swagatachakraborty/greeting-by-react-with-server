@@ -7,6 +7,6 @@ app.post('/update', (req, res) => {
   res.send('Hi ' + req.body.name + ' !!!');
 });
 
-app.use(express.static('client/build'));
+app.use(express.static('build'));
 
 module.exports = app;
